@@ -17,10 +17,10 @@ import base64
 
 # Helper function imports
 # These are pre-computed so that they don't slow down the App
-from helper_functions import (distr_selectbox_names,
-                              stats_options,
-                              creating_dictionaries,
-                             )
+# from helper_functions import (distr_selectbox_names,
+#                               stats_options,
+#                               creating_dictionaries,
+#                              )
 
 
 def page_explore():
@@ -29,6 +29,11 @@ def page_explore():
     exploration of the continuous distributions that are available in SciPy.
     """
     
+    # Space so that 'About' box-text is lower
+    st.sidebar.write("")
+    st.sidebar.write("")
+    st.sidebar.write("")
+     
 #     name_docstring_dict, name_eq_dict, name_proper_dict, \
 #         all_dist_params_dict, name_url_dict = creating_dictionaries()
     
