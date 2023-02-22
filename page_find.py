@@ -216,7 +216,7 @@ def page_find():
         xdata = df.iloc[:, 0].astype(float)
         # kcat vs. [X]
         ydata0 = df.iloc[:,1]
-        ig = np.asarray([1,np.mean(ydata0),np.mean(xdata)])
+        ig = np.asarray([1,min(ydata0),np.mean(xdata)])
         parameters0, covariance0 = curve_fit(fun_kcat, xdata, ydata0, p0=ig, maxfev=10000)
         beta = parameters0[0]
         k2 = parameters0[1]
