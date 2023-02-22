@@ -34,16 +34,16 @@ def page_find():
                 """)
                 
     # Add a bit empy space before showing About
-    st.sidebar.text("")
+    st.sidebar.text(" ")
     
     # Input enzyme concentration
     Enzyme = st.sidebar.number_input('Enzyme concentration [E]', format="%2.2e", value = 1e0,min_value = 1e-20)
     # Ryn full analysis or step-by-step analysis
     st.sidebar.markdown("**Type of Analysis:**")
-    analysis_mode = st.sidebar.radio('', ('Run All', 'Step-by-Step'))   
+    analysis_mode = st.sidebar.radio(' ', ('Run All', 'Step-by-Step'))   
 
-    st.sidebar.text("")
-    st.sidebar.text("")
+    st.sidebar.text(" ")
+    st.sidebar.text(" ")
 
     st.markdown("<h1 style='text-align: center;'> Find the General Modifier Mechanism </h1>", 
                 unsafe_allow_html=True)
